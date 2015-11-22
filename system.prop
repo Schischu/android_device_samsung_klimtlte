@@ -10,6 +10,7 @@ ro.hdcp2.rx=tz
 lockscreen.rot_override=true
 ro.sf.lcd_density=320
 ro.opengles.version=196608
+
 ro.hwui.texture_cache_size=96
 ro.hwui.layer_cache_size=64
 ro.hwui.path_cache_size=16
@@ -21,8 +22,6 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=512
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
-
-persist.sys.usb.config=mtp
 
 # Radio
 rild.libpath=/system/lib/libsec-ril.so

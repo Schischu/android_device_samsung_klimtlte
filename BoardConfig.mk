@@ -20,9 +20,8 @@ LOCAL_PATH := device/samsung/klimtlte
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 #TARGET_SLSI_VARIANT := 
-#hardware/samsung_slsi/exynos5-insignal
 TARGET_SLSI_VARIANT := insignal
-#hardware/samsung_slsi/exynos5420
+#TARGET_SLSI_VARIANT := cm
 TARGET_SOC := exynos5420
 
 # Architecture
@@ -91,8 +90,10 @@ COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := klimtlte_01_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/klimtwifi
+#TARGET_KERNEL_CONFIG := klimtlte_00_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/klimtlte
+TARGET_KERNEL_CONFIG := cyanogenmod_klimtlte_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/chagalllte
 
 # Charging mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -147,8 +148,9 @@ BOARD_USE_VP8ENC_SUPPORT := true
 BOARD_USE_ENCODER_RGBINPUT_SUPPORT := true
 BOARD_USE_DUALDPB_MODE := true
 
-WITH_DEXPREOPT := true
-DONT_DEXPREOPT_PREBUILTS := true
+# Not yet compatible with art
+#WITH_DEXPREOPT := true
+#DONT_DEXPREOPT_PREBUILTS := true
 
 #default TARGET_USERIMAGES_USE_EXT4 := true
 #TARGET_USERIMAGES_USE_F2FS := true
