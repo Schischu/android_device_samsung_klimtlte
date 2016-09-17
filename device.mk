@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
     rild
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=unknown 
+    ro.carrier=unknown
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
